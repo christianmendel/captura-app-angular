@@ -1,0 +1,72 @@
+.captura-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMoveUp 1s ease forwards;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.captura-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #9c88ff;
+  outline: none;
+}
+
+.form-field button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #9c88ff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-field button:hover {
+  background-color: #8c7ae6;
+}
+
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

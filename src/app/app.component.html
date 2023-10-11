@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+<div class="captura-container">
+  <h2 class="section-title">Captura</h2>
+  <p class="section-subtitle">Se você tiver alguma dúvida, sinta-se à vontade para me enviar uma mensagem!</p>
+  <form class="captura-form" [formGroup]="capturaForm" (ngSubmit)="submitForm()">
+    <div class="form-field">
+      <input type="text" placeholder="Seu nome" formControlName="name">
+    </div>
+    <div class="form-field">
+      <input type="email" placeholder="Seu email" formControlName="email">
+    </div>
+    <div class="form-field">
+      <textarea rows="4" placeholder="Sua mensagem" formControlName="message"></textarea>
+    </div>
+    <div class="form-field">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
